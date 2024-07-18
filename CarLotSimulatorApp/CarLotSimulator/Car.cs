@@ -24,13 +24,13 @@ public class Car
     public void MakeEngineNoise(string engineNoise)
     {
         EngineNoise = engineNoise;
-        Console.WriteLine($"{EngineNoise}");
+        Console.WriteLine($"The '{Year} {Make} makes this engine noise: {EngineNoise}");
     }
 
     public void MakeHonkNoise(string honkNoise)
     {
         HonkNoise = honkNoise;
-        Console.WriteLine($"{HonkNoise}");
+        Console.WriteLine($"The '{Year} {Make} makes this honk noise:{HonkNoise}");
     }
     
     //Extra credit method

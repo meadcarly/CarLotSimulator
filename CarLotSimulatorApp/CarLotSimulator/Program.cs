@@ -61,10 +61,6 @@ namespace CarLotSimulator
             bike.MakeHonkNoise("mmmmmmeeeeeee");
             
             carLot1.CarLotList.Add(bike);
-
-            Console.WriteLine($"{muscleCar.Year}\n{muscleCar.Make}\n{muscleCar.Model}\n{muscleCar.EngineNoise}\n{muscleCar.HonkNoise}\n{muscleCar.IsDriveable}");
-            Console.WriteLine($"{offRoadVehicle.Year}\n{offRoadVehicle.Make}\n{offRoadVehicle.Model}\n{offRoadVehicle.EngineNoise}\n{offRoadVehicle.HonkNoise}\n{offRoadVehicle.IsDriveable}");
-            Console.WriteLine($"{bike.Year}\n{bike.Make}\n{bike.Model}\n{bike.EngineNoise}\n{bike.HonkNoise}\n{bike.IsDriveable}");
             
             carLot1.ListCarAvailability();
         }
