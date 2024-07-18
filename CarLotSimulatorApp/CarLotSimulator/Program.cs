@@ -35,9 +35,10 @@ namespace CarLotSimulator
             muscleCar.Year = 69;
             muscleCar.Make = "Corvette";
             muscleCar.Model = "Stingray";
-            muscleCar.EngineNoise = "Vroom Vroom";
-            muscleCar.HonkNoise = "Beep Beep";
             muscleCar.IsDriveable = true;
+
+            muscleCar.MakeEngineNoise("Vroom Vroom");
+            muscleCar.MakeHonkNoise("Beep Beep");
             
             carLot1.CarLotList.Add(muscleCar);
 
@@ -46,14 +47,18 @@ namespace CarLotSimulator
                 Year = 21,
                 Make = "Jeep",
                 Model = "Gladiator Mojave",
-                EngineNoise = "Bruum Bruum",
-                HonkNoise = "Honk Honk",
                 IsDriveable = true,
             };
             
+            offRoadVehicle.MakeEngineNoise("BBRRUUUMM");
+            offRoadVehicle.MakeHonkNoise("honk honk");
+            
             carLot1.CarLotList.Add(offRoadVehicle);
 
-            var bike = new Car(24, "Ducati", "Diavel", "MMMMMMRRRRRR", "Meerrr", true);
+            var bike = new Car(24, "Ducati", "Diavel", true);
+            
+            bike.MakeEngineNoise("VVRRMMMMMM");
+            bike.MakeHonkNoise("mmmmmmeeeeeee");
             
             carLot1.CarLotList.Add(bike);
 

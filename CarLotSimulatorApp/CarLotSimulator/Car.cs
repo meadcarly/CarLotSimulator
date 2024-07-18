@@ -21,14 +21,16 @@ public class Car
 
     public bool IsDriveable { get; set; }
 
-    public void MakeEngineNoise()
+    public void MakeEngineNoise(string engineNoise)
     {
-        Console.WriteLine($"{MakeEngineNoise}");
+        EngineNoise = engineNoise;
+        Console.WriteLine($"{EngineNoise}");
     }
 
-    public void MakeHonkNoise()
+    public void MakeHonkNoise(string honkNoise)
     {
-        Console.WriteLine($"{MakeHonkNoise}");
+        HonkNoise = honkNoise;
+        Console.WriteLine($"{HonkNoise}");
     }
     
     //Extra credit method
@@ -44,13 +46,11 @@ public class Car
     }
 
     //Custom constructor
-    public Car(int year, string make, string model, string engineNoise, string honkNoise, bool isDriveable)
+    public Car(int year, string make, string model, bool isDriveable)
     {
         Year = year;
         Make = make;
         Model = model;
-        EngineNoise = engineNoise;
-        HonkNoise = honkNoise;
         IsDriveable = isDriveable;
     }
 }
