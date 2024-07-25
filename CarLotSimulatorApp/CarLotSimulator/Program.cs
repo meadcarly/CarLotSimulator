@@ -63,6 +63,7 @@ namespace CarLotSimulator
             carLot1.CarLotList.Add(bike);
             
             carLot1.ListCarAvailability();
+
         }
     } 
 }

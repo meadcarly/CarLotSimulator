@@ -42,6 +42,8 @@ public class Car
     //Default contructor
     public Car()
     {
+        CarLot._numberOfCars++;
+        Console.WriteLine($"Updated Inventory! We now have {CarLot._numberOfCars} vehicle(s) on the lot.");
 
     }
 
@@ -52,5 +54,7 @@ public class Car
         Make = make;
         Model = model;
         IsDriveable = isDriveable;
+        CarLot._numberOfCars++;
+        Console.WriteLine($"Updated inventory! We now have {CarLot._numberOfCars} vehicle(s) on the lot.");
     }
 }

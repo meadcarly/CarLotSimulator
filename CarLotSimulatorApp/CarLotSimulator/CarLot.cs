@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace CarLotSimulator;
@@ -6,6 +7,8 @@ namespace CarLotSimulator;
 public class CarLot
 {
     public List<Car> CarLotList { get; set; } = new List<Car>();
+
+    public static int _numberOfCars;
 
     public void ListCarAvailability()
     {
